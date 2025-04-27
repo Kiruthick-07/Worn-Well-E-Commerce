@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.nav-links{
+    display: flex;
+    column-gap: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover{
+    color: #2533fa;
+    text-decoration: underline;
+}
+.toggle-menu{
+    display: none;
+}
+.side-navbar{
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    display: none;
+    left: 0;
+    padding: 20px;
+}
+.sidenavdata{
+    color: white;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.sidenavdata:hover{
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    
+}
+.header-text h1{
+    font-size: 45px;
+    margin-left: 70px;
+    margin-top: 120px;
+    display: flex;
+}
+.header-text h4{
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 0px;
+    display: flex;
+}
+.header-text p{
+    font-size: 12px;
+    margin-left: 70px;
+    color: rgb(129, 129, 129);
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.header-btn{
+    margin-left: 70px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 15px;
+    
+}
+.header-btn2{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border-color: #000000;
+    border-style: solid;
+}
+.header-btn:hover{
+    background-color: #e6e6e6;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: #000000;
+}
+@media screen and (max-width:800px) {
+    .toggle-menu{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+}
